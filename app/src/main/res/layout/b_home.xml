@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".B_Home">
+
+    <FrameLayout
+        android:id="@+id/Main_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundColor="#DDDDDD"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:iconTintActive="@color/card_red"
+        app:indicatorRadius="10dp"
+        android:fitsSystemWindows="true"
+        app:textColor="@color/black"
+        app:indicatorColor="@color/white"
+        app:cornerRadius="0dp"
+        app:menu="@menu/bottom_nav"/>
+
+</LinearLayout>

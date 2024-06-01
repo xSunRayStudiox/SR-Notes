@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#03A9F4</color>
+    <color name="purple_500">#0026FA</color>
+    <color name="purple_700">#021687</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#515151</color>
+    <color name="olive">#808000</color>
+    <color name="dark_purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+
+    <color name="purple">#D4C4E3</color>
+    <color name="darkPurple">#9387F5</color>
+    <color name="blue">#A8DAF0</color>
+    <color name="peach">#F0C390</color>
+    <color name="green">#C3F09C</color>
+    <color name="orangeRed">#F3722C</color>
+    <color name="yellowOrange">#F8961E</color>
+    <color name="MangoTango">#F9844A</color>
+    <color name="maizeCrayola">#F9C74F</color>
+    <color name="card_purple">#8690B1</color>
+    <color name="card_yellow">#FFCC00</color>
+    <color name="card_red">#FF3B30</color>
+    <color name="card_violet">#FF9500</color>
+    <color name="card_blue">#5AC8FA</color>
+    <color name="card_green">#34C759</color>
+
+
+    <array name="color_picker">
+        <item>@color/white</item>
+        <item>@color/card_purple</item>
+        <item>@color/card_yellow</item>
+        <item>@color/card_red</item>
+        <item>@color/card_violet</item>
+        <item>@color/card_blue</item>
+        <item>@color/card_green</item>
+        <item>@color/peach</item>
+        <item>@color/green</item>
+        <item>@color/purple</item>
+        <item>@color/darkPurple</item>
+        <item>@color/blue</item>
+        <item>@color/orangeRed</item>
+        <item>@color/yellowOrange</item>
+        <item>@color/MangoTango</item>
+        <item>@color/maizeCrayola</item>
+    </array>
+
+</resources>
