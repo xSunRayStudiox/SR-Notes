@@ -20,6 +20,7 @@ import me.ibrahimsn.lib.SmoothBottomBar;
 public class B_Home extends AppCompatActivity {
     private SmoothBottomBar navigationView;
     private Fragment currentFragment;
+    private OnBackPressedDispatcher onBackPressed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,11 @@ public class B_Home extends AppCompatActivity {
         // Initialization
         navigationView = findViewById(R.id.bottomBar);
         setFragment(new Notes_List());
+        Bottom_Navigation();
+        Back_Pressed();
+    }
 
-        // Bottom Navigation OnClick Operation
+    private void Bottom_Navigation(){
         navigationView.setOnItemSelectedListener((OnItemSelectedListener) i -> {
             if (i==0){
                 setFragment(new Notes_List());
@@ -47,8 +51,20 @@ public class B_Home extends AppCompatActivity {
             }
             return false;
         });
+    }
 
-        OnBackPressedDispatcher onBackPressed = getOnBackPressedDispatcher();
+    private void setFragment(Fragment fragment) {
+        // Fragment Set
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.Main_Fragment, fragment);
+        transaction.commit();
+        // Save Fragment in Variable
+        currentFragment = fragment;
+    }
+
+    private void Back_Pressed(){
+        onBackPressed = getOnBackPressedDispatcher();
         onBackPressed.addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -62,26 +78,5 @@ public class B_Home extends AppCompatActivity {
             }
         });
     }
-    private void setFragment(Fragment fragment) {
-        // Fragment Set
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.Main_Fragment, fragment);
-        transaction.commit();
-        // Save Fragment in Variable
-        currentFragment = fragment;
-    }
-
-//    @Override
-//    public void onBackPressed() {
-//        // Check Current Fragment And Set Or Back Press Close
-//        if (currentFragment instanceof Notes_List){
-//            super.onBackPressed();
-//        } else {
-//            setFragment(new Notes_List());
-//            currentFragment = new Notes_List();
-//            navigationView.setItemActiveIndex(0);
-//        }
-//    }
 
 }
