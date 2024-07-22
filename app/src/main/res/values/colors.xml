@@ -6,19 +6,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFF</color>
-
-    <color name="yellow">#FFFF00</color>
-    <color name="fuchsia">#FF00FF</color>
-    <color name="red">#FF0000</color>
     <color name="silver">#C0C0C0</color>
-    <color name="gray">#515151</color>
-    <color name="olive">#808000</color>
-    <color name="dark_purple">#800080</color>
-    <color name="maroon">#800000</color>
-    <color name="aqua">#00FFFF</color>
-    <color name="lime">#00FF00</color>
-    <color name="teal">#008080</color>
-    <color name="navy">#000080</color>
     <color name="black">#000000</color>
 
     <color name="purple">#D4C4E3</color>
@@ -55,6 +43,25 @@
         <item>@color/yellowOrange</item>
         <item>@color/MangoTango</item>
         <item>@color/maizeCrayola</item>
+    </array>
+
+    <array name="dark_color">
+        <item>#FF8F8F8F</item>
+        <item>#55618A</item>
+        <item>#AE911D</item>
+        <item>#A5261F</item>
+        <item>#C8801B</item>
+        <item>#308EB8</item>
+        <item>#168F35</item>
+        <item>#A38462</item>
+        <item>#6A8354</item>
+        <item>#857991</item>
+        <item>#5A5295</item>
+        <item>#617E8A</item>
+        <item>#A34D1E</item>
+        <item>#A56415</item>
+        <item>#A35731</item>
+        <item>#977830</item>
     </array>
 
 </resources>

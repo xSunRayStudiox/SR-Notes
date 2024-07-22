@@ -9,8 +9,8 @@
     <string name="title">Title</string>
     <string name="password">Password</string>
 
-    <string name="my_notes">My Notes</string>
-    <string name="search_here">Search here....</string>
+    <string name="my_notes">Notes</string>
+    <string name="search_here">Search...</string>
     <string name="clear">clear</string>
     <string name="no_data">no_data</string>
     <string name="add_note">Add Note</string>
@@ -23,5 +23,8 @@
         centuries, but also the leap into electronic typesetting,
         remaining essentially unchanged.
     </string>
-    <string name="edited_on">Edited on: %1$s</string>
+    <string name="edited_on">Edited on</string>
+    <string name="heading">Heading</string>
+    <string name="type_note_here">Type note here....</string>
+    <string name="links">Links</string>
 </resources>

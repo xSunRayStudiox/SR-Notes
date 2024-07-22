@@ -5,22 +5,19 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
-import androidx.room.Update;
-import com.sun_ray.srnotes.model.Note;
+
+import com.sun_ray.srnotes.model.Url;
+
 import java.util.List;
 
 @Dao
-public interface NoteDao {
-    @Query("Select * From Notes Order By Date Desc")
-    List<Note> getNote();
+public interface UrlDao {
+    @Query("Select * From Urls Order By Date Desc")
+    List<Url> getUrls();
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void addNote(Note note);
-
-    @Update
-    void updateNote(Note note);
+    void addUrl(Url url);
 
     @Delete
-    void deleteNote(Note note);
-
+    void deleteUrl(Url url);
 }

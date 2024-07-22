@@ -17,7 +17,7 @@ import java.util.Objects;
 import me.ibrahimsn.lib.OnItemSelectedListener;
 import me.ibrahimsn.lib.SmoothBottomBar;
 
-public class B_Home extends AppCompatActivity {
+public class Activity_Home extends AppCompatActivity {
     private SmoothBottomBar navigationView;
     private Fragment currentFragment;
     private OnBackPressedDispatcher onBackPressed;
@@ -25,8 +25,7 @@ public class B_Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.b_home);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        setContentView(R.layout.activity_home);
 
         // Initialization
         navigationView = findViewById(R.id.bottomBar);
@@ -53,13 +52,12 @@ public class B_Home extends AppCompatActivity {
         });
     }
 
-    private void setFragment(Fragment fragment) {
+    public void setFragment(Fragment fragment) {
         // Fragment Set
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.Main_Fragment, fragment);
         transaction.commit();
-        // Save Fragment in Variable
         currentFragment = fragment;
     }
 
