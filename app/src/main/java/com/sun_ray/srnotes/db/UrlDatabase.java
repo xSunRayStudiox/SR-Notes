@@ -16,9 +16,7 @@ public abstract class UrlDatabase extends RoomDatabase {
     public static synchronized UrlDatabase getDB(Context context){
         if (instance==null){
             instance = Room.databaseBuilder(context, UrlDatabase.class, "Urls")
-                    .fallbackToDestructiveMigration()
-                    .allowMainThreadQueries()
-                    .build();
+                    .fallbackToDestructiveMigration().allowMainThreadQueries().build();
         }
 
         return instance;

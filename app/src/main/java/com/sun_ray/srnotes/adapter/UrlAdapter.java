@@ -8,11 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sun_ray.srnotes.R;
@@ -46,6 +46,13 @@ public class UrlAdapter extends RecyclerView.Adapter<UrlAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull UrlAdapter.ViewHolder holder, int position) {
         holder.title.setText(list.get(position).getTitle());
         holder.url.setText(list.get(position).getLink());
+        holder.date.setText(list.get(position).getDate());
+        try {
+            holder.url.setSelected(true);
+            holder.title.setSelected(true);
+        } catch (Exception e){
+            Toast.makeText(context, "Error: "+e, Toast.LENGTH_LONG).show();
+        }
 
         holder.cardView.setOnLongClickListener(v -> {
             DeleteItem(position);
@@ -90,9 +97,9 @@ public class UrlAdapter extends RecyclerView.Adapter<UrlAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        CardView cardView;
+        LinearLayout cardView;
         Button Open;
-        TextView title, url;
+        TextView title, url, date;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -100,6 +107,7 @@ public class UrlAdapter extends RecyclerView.Adapter<UrlAdapter.ViewHolder> {
             Open = itemView.findViewById(R.id.open);
             title = itemView.findViewById(R.id.title);
             url = itemView.findViewById(R.id.url);
+            date = itemView.findViewById(R.id.date);
         }
     }
 }

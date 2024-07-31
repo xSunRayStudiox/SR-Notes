@@ -82,7 +82,7 @@ public class Url_List extends Fragment {
         Cancel.setOnClickListener(v -> {
             AddLink.setVisibility(View.GONE);
             create.setVisibility(View.VISIBLE);
-            SaveUrl();
+            ShowUrls();
         });
 
         ShowUrls();

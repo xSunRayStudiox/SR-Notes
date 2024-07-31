@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SR Notes</string>
+    <string name="app_name">Notes</string>
     <string name="note">Notes</string>
     <string name="link">Link</string>
     <string name="about">About</string>
@@ -27,4 +27,5 @@
     <string name="heading">Heading</string>
     <string name="type_note_here">Type note here....</string>
     <string name="links">Links</string>
+    <string name="url_demo">https:www.url.com/</string>
 </resources>

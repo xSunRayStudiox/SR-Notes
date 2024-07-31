@@ -5,19 +5,17 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
-
-import com.sun_ray.srnotes.model.Url;
-
+import com.sun_ray.srnotes.model.Password;
 import java.util.List;
 
 @Dao
-public interface UrlDao {
-    @Query("Select * From Urls Order By id Desc")
-    List<Url> getUrls();
+public interface PassDao {
+    @Query("Select * From Passwords Order By id Desc")
+    List<Password> getPass();
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void addUrl(Url url);
+    void addPass(Password password);
 
     @Delete
-    void deleteUrl(Url url);
+    void deletePass(Password password);
 }
