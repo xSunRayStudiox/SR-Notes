@@ -20,14 +20,12 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="5dp"
             android:layout_marginEnd="7dp"
             android:layout_weight="1"
             android:fontFamily="@font/google_sans_medium"
             android:hint="@string/heading"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:scrollHorizontally="true"
+            android:textSize="18sp"
             android:singleLine="true"
             android:textColor="@color/black" />
 
@@ -45,43 +43,23 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/url"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:drawablePadding="10dp"
-            android:gravity="center_vertical"
-            android:hint="@string/some_text"
-            android:layout_marginEnd="7dp"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:scrollHorizontally="true"
-            android:singleLine="true"
-            android:textSize="12sp"
-            app:drawableStartCompat="@drawable/ic_add_link_24" />
-
-        <Button
-            android:id="@+id/open"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/google_sans_bold"
-            android:padding="5dp"
-            android:text="Open"
-            android:textColor="@color/card_green" />
-
-    </LinearLayout>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="@string/some_text"
+        android:layout_marginEnd="7dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:drawableStartCompat="@drawable/ic_add_link_24" />
 
     <View
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="1dp"
         android:background="@color/silver" />
 
